@@ -270,9 +270,6 @@ wget -O wbmn "https://raw.githubusercontent.com/febrystores/ScriptPremium01/main
 wget -O clear-log "https://raw.githubusercontent.com/febrystores/ScriptPremium01/main/clear-log.sh"
 wget -O xp "https://raw.githubusercontent.com/febrystores/ScriptPremium01/main/xp.sh"
 wget -O /usr/bin/user-limit https://raw.githubusercontent.com/febrystores/ScriptPremium01/main/user-limit.sh && chmod +x /usr/bin/user-limit
-wget -O cfd "https://raw.githubusercontent.com/febrystores/ScriptPremium01/main/cfd.sh"
-wget -O cff "https://raw.githubusercontent.com/febrystores/ScriptPremium01/main/cff.sh"
-wget -O cfh "https://raw.githubusercontent.com/febrystores/ScriptPremium01/main/cfh.sh"
 wget -O autoreboot "https://raw.githubusercontent.com/febrystores/ScriptPremium01/main/autoreboot.sh"
 wget -O bannerku "https://raw.githubusercontent.com/febrystores/ScriptPremium01/main/menu-all/bannerku"
 wget -O bbr "https://raw.githubusercontent.com/febrystores/ScriptPremium01/main/menu-all/bbr.sh"
@@ -316,9 +313,6 @@ chmod +x port-vless
 chmod +x wbmn
 chmod +x clear-log
 chmod +x xp
-chmod +x cfd
-chmod +x cff
-chmod +x cfh
 chmod +x autoreboot
 chmod +x bannerku
 chmod +x bbr
