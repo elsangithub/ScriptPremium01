@@ -2,7 +2,15 @@
 red="\e[1;31m"                                                                          
 green="\e[0;32m"                                                                        
 NC="\e[0m"                                                                              
-
+clear
+       echo -e "┏━━━┳━━━┳━━━┓  ┏━━━┳━━━┳━━┓┏┓╋┏┳━━━━┓" | lolcat
+       echo -e "┃┏━┓┃┏━━┫┏━┓┃  ┃┏━┓┃┏━┓┃┏┓┃┃┃╋┃┃┏┓┏┓┃" | lolcat
+       echo -e "┃┃╋┗┫┗━━┫┃╋┃┃  ┃┃╋┗┫┃╋┃┃┗┛┗┫┃╋┃┣┛┃┃┗┛" | lolcat
+       echo -e "┃┃┏━┫┏━━┫┃╋┃┃  ┃┃┏━┫┗━┛┃┏━┓┃┃╋┃┃╋┃┃" | lolcat
+       echo -e "┃┗┻━┃┗━━┫┗━┛┃  ┃┗┻━┃┏━┓┃┗━┛┃┗━┛┃╋┃┃" | lolcat
+       echo -e "┗━━━┻━━━┻━━━┛  ┗━━━┻┛╋┗┻━━━┻━━━┛╋┗┛" | lolcat
+       echo -e ""
+   
 status="$(systemctl show ssh.service --no-page)"                                   
 status_text=$(echo "${status}" | grep 'ActiveState=' | cut -f2 -d=)                     
 if [ "${status_text}" == "active" ]                                                     
