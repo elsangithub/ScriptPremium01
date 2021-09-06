@@ -10,7 +10,6 @@ ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
 CITY=$(curl -s ipinfo.io/city )
 WKT=$(curl -s ipinfo.io/timezone )
 IPVPS=$(curl -s ipinfo.io/ip )
-DOMAIN=$(cat /etc/v2ray/domain)
 	cname=$( awk -F: '/model name/ {name=$2} END {print name}' /proc/cpuinfo )
 	cores=$( awk -F: '/model name/ {core++} END {print core}' /proc/cpuinfo )
 	freq=$( awk -F: ' /cpu MHz/ {freq=$2} END {print freq}' /proc/cpuinfo )
@@ -26,8 +25,7 @@ DOMAIN=$(cat /etc/v2ray/domain)
 	echo -e "   \e[032;1mIsp Name:\e[0m $ISP"
 	echo -e "   \e[032;1mCity:\e[0m $CITY"
 	echo -e "   \e[032;1mTime:\e[0m $WKT"
-	echo -e "   \e[032;1mIPVPS:\e[0m $IPVPS"
-	echo -e "   \e[032;1mDOMAIN:\e[0m $DOMAIN"
+	echo -e "   \e[033;1mIPVPS:\e[0m $IPVPS"
 echo -e  ""
 echo -e  "   -------------------------MENU OPTIONS------------------------" | lolcat
 echo -e   "   1\e[1;33m)\e[m SSH & OpenVPN Menu"
