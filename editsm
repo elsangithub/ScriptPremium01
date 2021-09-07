@@ -1,5 +1,5 @@
 #!/bin/bash
-# Created by http://halucok.me
+# Created by https://raw.githubusercontent.com/febrystores/ScriptPremium01/main/menu-all/editsm
 # Remodified by GEO GABUT
 
 if [[ $USER != 'root' ]]; then
