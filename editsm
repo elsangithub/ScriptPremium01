@@ -1,5 +1,5 @@
 #!/bin/bash
-# Created by https://raw.githubusercontent.com/febrystores/ScriptPremium01/main/menu-all/editsm
+# Created by wget -O /usr/bin/editsm https://raw.githubusercontent.com/febrystores/ScriptPremium01/main
 # Remodified by GEO GABUT
 
 if [[ $USER != 'root' ]]; then
