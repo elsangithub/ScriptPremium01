@@ -156,10 +156,10 @@ socket = r:TCP_NODELAY=1
 
 [stunnelws]
 accept = 443
-connect = 127.0.0.1:2053
+connect = 127.0.0.1:98
 
 [dropbear]
-accept = 222
+accept = 443
 connect = 127.0.0.1:22
 
 [dropbear]

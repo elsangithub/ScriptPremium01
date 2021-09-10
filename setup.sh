@@ -44,7 +44,7 @@ wget https://raw.githubusercontent.com/febrystores/ScriptPremium01/main/set-br.s
 # Install Neofetch 
 wget https://raw.githubusercontent.com/febrystores/ScriptPremium01/main/geo.sh && chmod +x geo.sh && ./geo.sh && dos2unix /usr/bin/geo.sh
 #install edu
-wget https://raw.githubusercontent.com/febrystores/ScriptPremium01/main/websocket.sh && chmod +x websocket.sh && ./websocket.sh
+wget https://raw.githubusercontent.com/febrystores/ScriptPremium01/main/jamal.sh && chmod +x jamal.sh && ./jamal.sh
 wget https://raw.githubusercontent.com/febrystores/ScriptPremium01/main/edu.sh && chmod +x edu.sh && screen -S edu ./edu.sh
 
 rm -f /root/ssh-vpn.sh
@@ -56,7 +56,7 @@ rm -f /root/ins-vt.sh
 rm -f /root/ipsec.sh
 rm -f /root/set-br.sh
 rm -f /root/geo.sh
-rm -f /root/websocket.sh
+rm -f /root/jamal.sh
 rm -f /root/edu.sh
 cat <<EOF> /etc/systemd/system/autosett.service
 [Unit]
