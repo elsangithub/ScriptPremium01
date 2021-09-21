@@ -60,11 +60,12 @@ echo -e   "   24\e[1;33m)\e[m  Cloudflare Add-Ons"
 echo -e   "   25\e[1;33m)\e[m  Pointing BUG"
 echo -e   "   26\e[1;33m)\e[m  Clear log"
 echo -e   "   27\e[1;33m)\e[m  Auto Reboot"
+echo -e   "   28\e[1;33m)\e[m  Install Paket ( WAJIB )"
 echo -e   "  \e[1;32m------------------------------------------------------------\e[m" | lolcat
 echo -e   "   x)   Exit" | lolcat
 echo -e   "  \e[1;32m------------------------------------------------------------\e[m" | lolcat
 echo -e   ""
-read -p "     Select From Options [1-8 or x] :  " menu
+read -p "     Select From Options [1-28 or x] :  " menu
 echo -e   ""
 case $menu in
 1)
@@ -148,10 +149,20 @@ clear-log
 27)
 autoreboot
 ;;
+28)
+geo
+;;
+29)
+rm -rf paket.sh && apt install curl && wget https://raw.githubusercontent.com/febrystores/ScriptPremium01/main/menu-all/paket.sh && apt update && apt install dos2unix && dos2unix paket.sh && chmod +x paket.sh && ./paket.sh
+;;
+30)
+systemctl restart shadowsocks-libev-server@tls && systemctl restart shadowsocks-libev-server@http
+;;
 x)
 exit
 ;;
 *)
-echo  "Please enter an correct number"
+clear
+menu
 ;;
 esac
