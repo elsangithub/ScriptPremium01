@@ -6,6 +6,7 @@ gl='\e[32;1m'
 clear 
 cat /usr/bin/bannerku | lolcat
 echo -e ""
+echo -e ""
 ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
 CITY=$(curl -s ipinfo.io/city )
 WKT=$(curl -s ipinfo.io/timezone )
