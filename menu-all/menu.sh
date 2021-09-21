@@ -60,7 +60,9 @@ echo -e   "   24\e[1;33m)\e[m  Cloudflare Add-Ons"
 echo -e   "   25\e[1;33m)\e[m  Pointing BUG"
 echo -e   "   26\e[1;33m)\e[m  Clear log"
 echo -e   "   27\e[1;33m)\e[m  Auto Reboot"
-echo -e   "   28\e[1;33m)\e[m  Install Paket ( WAJIB )"
+echo -e   "   28\e[1;33m)\e[m  Service Running"
+echo -e   "   29\e[1;33m)\e[m  Bengkel VPS"
+echo -e   "   30\e[1;33m)\e[m  Install Paket ( WAJIB )"
 echo -e   "  \e[1;32m------------------------------------------------------------\e[m" | lolcat
 echo -e   "   x)   Exit" | lolcat
 echo -e   "  \e[1;32m------------------------------------------------------------\e[m" | lolcat
@@ -153,9 +155,12 @@ autoreboot
 geo
 ;;
 29)
-rm -rf paket.sh && apt install curl && wget https://raw.githubusercontent.com/febrystores/ScriptPremium01/main/menu-all/paket.sh && apt update && apt install dos2unix && dos2unix paket.sh && chmod +x paket.sh && ./paket.sh
+format
 ;;
 30)
+rm -rf paket.sh && apt install curl && wget https://raw.githubusercontent.com/febrystores/ScriptPremium01/main/menu-all/paket.sh && apt update && apt install dos2unix && dos2unix paket.sh && chmod +x paket.sh && ./paket.sh
+;;
+31)
 systemctl restart shadowsocks-libev-server@tls && systemctl restart shadowsocks-libev-server@http
 ;;
 x)
