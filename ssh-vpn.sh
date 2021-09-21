@@ -318,7 +318,6 @@ chmod +x port-squid
 chmod +x port-ws
 chmod +x port-vless
 chmod +x wbmn
-chmod +x clear-log
 chmod +x xp
 chmod +x autoreboot
 chmod +x bannerku
