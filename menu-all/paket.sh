@@ -16,8 +16,8 @@ echo "Start Update"
 # update
 cd /usr/bin
 #install sslh
-echo "=================  Install Multi Port ======================"
-apt-get install sslh -y
+echo "=================  GEO GABUT PENHOTEN ======================"
+#apt-get install sslh -y
 
 #konfigurasi
 #wget -O /etc/default/sslh "https://raw.githubusercontent.com/ADITYAH2/halucok/main/sslh/sslh-conf"
