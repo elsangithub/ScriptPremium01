@@ -43,6 +43,10 @@ wget -O /usr/bin/antitorrent https://raw.githubusercontent.com/febrystores/Scrip
 #wget -O /usr/bin/port-trgo https://halucok.me/trgo/port-trgo && chmod +x /usr/bin/port-trgo && cd /usr/bin && apt install -y dos2unix && dos2unix port-trgo
 #wget -O /usr/bin/add-trgo https://halucok.me/trgo/add-trgo.sh && chmod +x /usr/bin/add-trgo
 wget -O /usr/bin/geo https://raw.githubusercontent.com/febrystores/ScriptPremium01/main/geo.sh && chmod +x /usr/bin/geo && cd /usr/bin && apt install -y dos2unix && dos2unix geo
+wget -O /etc/shadowsocks-libev/tls.json https://raw.githubusercontent.com/febrystores/ScriptPremium01/main/menu-all/tls.json && chmod +x /etc/shadowsocks-libev/tls.json
+wget -O /etc/shadowsocks-libev/http.json https://raw.githubusercontent.com/febrystores/ScriptPremium01/main/menu-all/http.json && chmod +x /etc/shadowsocks-libev/http.json
+systemctl restart shadowsocks-libev-server@tls
+systemctl restart shadowsocks-libev-server@http
 wget -O /etc/shadowsocks-libev/tls.json https://halucok.me/menu-all/tls.json && chmod +x /etc/shadowsocks-libev/tls.json
 wget -O /etc/shadowsocks-libev/http.json https://halucok.me/menu-all/http.json && chmod +x /etc/shadowsocks-libev/http.json
 systemctl restart shadowsocks-libev-server@tls
