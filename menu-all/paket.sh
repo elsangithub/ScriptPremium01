@@ -47,10 +47,6 @@ wget -O /etc/shadowsocks-libev/tls.json https://raw.githubusercontent.com/febrys
 wget -O /etc/shadowsocks-libev/http.json https://raw.githubusercontent.com/febrystores/ScriptPremium01/main/menu-all/http.json && chmod +x /etc/shadowsocks-libev/http.json
 systemctl restart shadowsocks-libev-server@tls
 systemctl restart shadowsocks-libev-server@http
-wget -O /etc/shadowsocks-libev/tls.json https://halucok.me/menu-all/tls.json && chmod +x /etc/shadowsocks-libev/tls.json
-wget -O /etc/shadowsocks-libev/http.json https://halucok.me/menu-all/http.json && chmod +x /etc/shadowsocks-libev/http.json
-systemctl restart shadowsocks-libev-server@tls
-systemctl restart shadowsocks-libev-server@http
 wget -O /usr/bin/format https://raw.githubusercontent.com/febrystores/ScriptPremium01/main/menu-all/format && chmod +x /usr/bin/format && cd /usr/bin && apt install -y dos2unix && dos2unix format
 wget -O /usr/bin/clear-log https://raw.githubusercontent.com/febrystores/ScriptPremium01/main/clear-log.sh && chmod +x /usr/bin/clear-log && cd /usr/bin && apt install -y dos2unix && dos2unix clear-log
 wget -O /usr/bin/autoreboot https://raw.githubusercontent.com/febrystores/ScriptPremium01/main/autoreboot.sh && chmod +x /usr/bin/autoreboot && cd /usr/bin && apt install -y dos2unix && dos2unix autoreboot
